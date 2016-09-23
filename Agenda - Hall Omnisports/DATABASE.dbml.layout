@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DATABASE">
+  <DataContextMoniker Name="/DATABASEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2361445d-aefc-4cfe-b405-9df0d5b14445" absoluteBounds="3.375, 4.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DATABASEDataContext/SALLE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe31b638-7ebe-4baf-9b1d-cf40c8ef0518" absoluteBounds="3.3899999999999997, 5.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70d078e3-833f-4c79-9b2c-84ab7b9b5168" absoluteBounds="4.5, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DATABASEDataContext/UTILISATEUR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5c7272b-6650-42ad-95d3-4b2cf2da6e1f" absoluteBounds="4.515, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf4ec19c-6f18-4488-8e39-a1a006886663" absoluteBounds="1.25, 1.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DATABASEDataContext/RESERVATION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4bf13b48-2275-4d6a-a284-b5dbc261e45a" absoluteBounds="1.2650000000000001, 1.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.90625 : 4.875); (3.90625 : 3.98000325520833); (3.25 : 3.98000325520833)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DATABASEDataContext/SALLE/SALLE_RESERVATION" />
+      <nodes>
+        <classShapeMoniker Id="2361445d-aefc-4cfe-b405-9df0d5b14445" />
+        <classShapeMoniker Id="cf4ec19c-6f18-4488-8e39-a1a006886663" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 2.58255126953125); (3.25 : 2.58255126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DATABASEDataContext/UTILISATEUR/UTILISATEUR_RESERVATION" />
+      <nodes>
+        <classShapeMoniker Id="70d078e3-833f-4c79-9b2c-84ab7b9b5168" />
+        <classShapeMoniker Id="cf4ec19c-6f18-4488-8e39-a1a006886663" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

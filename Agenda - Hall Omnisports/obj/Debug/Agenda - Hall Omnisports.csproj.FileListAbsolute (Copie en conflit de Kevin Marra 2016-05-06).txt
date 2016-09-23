@@ -1,0 +1,78 @@
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\bin\Debug\Agenda - Hall Omnisports.exe.config
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\bin\Debug\Agenda - Hall Omnisports.exe
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\bin\Debug\Agenda - Hall Omnisports.pdb
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\bin\Debug\WPFToolkit.dll
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.csprojResolveAssemblyReference.cache
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Metro.MSControls.Core.Implicit.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Metro.MSControls.Toolkit.Implicit.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Styles.Shared.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Styles.WPF.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Theme.Colors.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Connection.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\GererReservation.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\GererSalle.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\InfoReservation.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\InfoSalle.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\InfoUtilisateur.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Inscription.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\MainWindow.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\App.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports_MarkupCompile.cache
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports_MarkupCompile.lref
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\App.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Connection.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\GererReservation.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\GererSalle.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\InfoReservation.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\InfoSalle.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\InfoUtilisateur.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Inscription.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\MainWindow.baml
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.g.resources
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda___Hall_Omnisports.Properties.Resources.resources
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.csproj.GenerateResource.Cache
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.exe
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.pdb
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\GererUtilisateur.g.cs
+C:\Users\Vincent Dechef\Dropbox\AGENDA\Agenda - Hall Omnisports\Agenda - Hall Omnisports\obj\Debug\GererUtilisateur.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\bin\Debug\Agenda - Hall Omnisports.exe.config
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.exe
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.pdb
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\bin\Debug\Agenda - Hall Omnisports.exe
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\bin\Debug\Agenda - Hall Omnisports.pdb
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\bin\Debug\WPFToolkit.dll
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Metro.MSControls.Core.Implicit.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Metro.MSControls.Toolkit.Implicit.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Styles.Shared.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Styles.WPF.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Themes\Metro\Theme.Colors.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Connection.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\GererReservation.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\GererSalle.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\GererUtilisateur.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\InfoReservation.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\InfoSalle.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\InfoUtilisateur.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Inscription.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\MainWindow.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\App.g.cs
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports_MarkupCompile.cache
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports_MarkupCompile.lref
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\App.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Connection.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\GererReservation.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\GererSalle.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\GererUtilisateur.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\InfoReservation.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\InfoSalle.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\InfoUtilisateur.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Inscription.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\MainWindow.baml
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.g.resources
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda___Hall_Omnisports.Properties.Resources.resources
+C:\Users\Kevin\Dropbox\AGENDA\Agenda - Hall Omnisports - Kevin\Agenda - Hall Omnisports\obj\Debug\Agenda - Hall Omnisports.csproj.GenerateResource.Cache

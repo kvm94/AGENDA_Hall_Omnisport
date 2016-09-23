@@ -1,0 +1,41 @@
+﻿<Window x:Class="Agenda___Hall_Omnisports.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Agenda___Hall_Omnisports"
+        mc:Ignorable="d"
+        Title="Agenda" Height="519" Width="624.532" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="543*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="105*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,10,0,0" Height="470" Width="604" Grid.ColumnSpan="4">
+            <Button x:Name="connectionButton" Content="Connexion" Canvas.Left="10" Canvas.Top="10" Width="110" Visibility="Visible" Click="connectionButton_Click"/>
+            <Button x:Name="deconnectionButton" Content="Deconnexion" Canvas.Left="10" Canvas.Top="10" Width="110" Visibility="Hidden" Click="deconnectionButton_Click"/>
+            <Button x:Name="infoUtilisateurButton" Content="Info Utilisateurs" Canvas.Left="130" Canvas.Top="10" Width="120" Click="infoUtilisateurButton_Click"/>
+            <Button x:Name="infoSalleButton" Content="Info Salle" Canvas.Left="487" Canvas.Top="10" Width="100" IsEnabled="False" Click="infoSalleButton_Click"/>
+            <Button x:Name="infoReserverButton" Content="Info Réservation" Canvas.Left="10" Canvas.Top="180" Width="145" IsEnabled="False" Click="infoReserverButton_Click"/>
+            <Button x:Name="gererProfilButton" Content="Gérer Profil" Canvas.Left="10" Canvas.Top="220" Width="145" Visibility="Hidden" Click="gererProfilButton_Click"/>
+            <Button x:Name="gererReserverButton" Content="Gérer Réservation" Canvas.Left="10" Canvas.Top="260" Width="145" Visibility="Hidden" Click="gererReserverButton_Click"/>
+            <Button x:Name="gererSalleButton" Content="Gérer Salle" Canvas.Left="10" Canvas.Top="300" Width="145" Visibility="Hidden" Click="gererSalleButton_Click"/>
+            <ComboBox x:Name="salleComboBox" Canvas.Left="497" Width="90" Text="Salle" IsEditable="True" SelectionChanged="salleComboBox_SelectionChanged" Canvas.Top="50"/>
+            <DatePicker x:Name="dateDatePicker" Canvas.Left="196" Canvas.Top="50" Height="35" Width="165" DisplayDate="2016-04-24" SelectedDateFormat="Long" IsEnabled="False" SelectedDateChanged="dateDatePicker_SelectedDateChanged"/>
+            <ListView x:Name="reservationListView" Canvas.Left="160" Canvas.Top="90" Width="427" Height="360" SelectionChanged="reservationListView_SelectionChanged">
+                <ListView.View>
+                    <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Réservation">
+                        <GridViewColumn x:Name="nomColumn" Header="Nom" Width="auto" DisplayMemberBinding="{Binding nomR}"/>
+                        <GridViewColumn x:Name="nomUtilisateurColumn" Header="Nom Utilisateur" Width="auto" DisplayMemberBinding="{Binding utilisateur}"/>
+                        <GridViewColumn x:Name="dateColumn" Header="Date" Width="66" DisplayMemberBinding="{Binding date}"/>
+                        <GridViewColumn x:Name="SalleColumn" Header="Salle" Width="auto" DisplayMemberBinding="{Binding salle}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <CheckBox x:Name="salleCheckBox" Content="" Canvas.Left="461" Click="salleCheckBox_Click" Canvas.Top="55" />
+            <CheckBox x:Name="dateCheckBox" Content="" Canvas.Left="160" Canvas.Top="55" Click="dateCheckBox_Click" />
+        </Canvas>
+    </Grid>
+</Window>

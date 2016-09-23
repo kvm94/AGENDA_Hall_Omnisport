@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Agenda_-_Hall_Omnisports" Class="DATABASEDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VNITRO-KEVIN\SQLDEVEL;Initial Catalog=Agenda_-_Hall_Omnisports;Integrated Security=True" SettingsObjectName="Agenda___Hall_Omnisports.Properties.Settings" SettingsPropertyName="Agenda___Hall_OmnisportsConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SALLE" Member="SALLE">
+    <Type Name="SALLE">
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Capacite" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surface" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="SALLE_RESERVATION" Member="RESERVATION" ThisKey="ID_Salle" OtherKey="ID_Salle" Type="RESERVATION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UTILISATEUR" Member="UTILISATEUR">
+    <Type Name="UTILISATEUR">
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Pseudo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Activite" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="UTILISATEUR_RESERVATION" Member="RESERVATION" ThisKey="ID_Utilisateur" OtherKey="ID_Utilisateur" Type="RESERVATION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RESERVATION" Member="RESERVATION">
+    <Type Name="RESERVATION">
+      <Column Name="ID_Reservation" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NomR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="SALLE_RESERVATION" Member="SALLE" ThisKey="ID_Salle" OtherKey="ID_Salle" Type="SALLE" IsForeignKey="true" />
+      <Association Name="UTILISATEUR_RESERVATION" Member="UTILISATEUR" ThisKey="ID_Utilisateur" OtherKey="ID_Utilisateur" Type="UTILISATEUR" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.UpdateSalle" Method="UpdateSalle">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nom" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="capacite" Type="System.Int32" DbType="Int" />
+    <Parameter Name="surface" Type="System.Int32" DbType="Int" />
+    <Parameter Name="detail" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Registration" Method="Registration">
+    <Parameter Name="pseudo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nom" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="prenom" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="activite" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="numTel" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="web" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateReservation" Method="UpdateReservation">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nom" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="detail" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="heureDebut" Type="System.Int32" DbType="Int" />
+    <Parameter Name="heureFin" Type="System.Int32" DbType="Int" />
+    <Parameter Name="minDebut" Type="System.Int32" DbType="Int" />
+    <Parameter Name="minFin" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Modification" Method="Modification">
+    <Parameter Name="pseudo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nom" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="prenom" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="activite" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="numTel" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="web" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetUser" Method="GetUser">
+    <Parameter Name="pseudo" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="GetUserResult">
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pseudo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Activite" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetSalleById" Method="GetSalleById">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetSalleByIdResult">
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Capacite" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surface" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetSalle" Method="GetSalle">
+    <ElementType Name="GetSalleResult">
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Capacite" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surface" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetIdUtilisateur" Method="GetIdUtilisateur">
+    <Parameter Name="pseudo" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetIdUtilisateurResult">
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetAllSalleName" Method="GetAllSalleName">
+    <ElementType Name="GetAllSalleNameResult">
+      <Column Name="nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.DeleteSalle" Method="DeleteSalle">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteReservation" Method="DeleteReservation">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Connexion" Method="Connexion">
+    <Parameter Name="pseudo" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetAllReservation" Method="GetAllReservation">
+    <ElementType Name="GetAllReservationResult">
+      <Column Name="ID_Reservation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Utilisateur1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pseudo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Activite" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetReservation" Method="GetReservation">
+    <Parameter Name="pseudo" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetReservationResult">
+      <Column Name="ID_Reservation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Utilisateur1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pseudo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Activite" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetAllUserName" Method="GetAllUserName">
+    <ElementType Name="GetAllUserNameResult">
+      <Column Name="Pseudo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetAllReservationByDateAndSalle" Method="GetAllReservationByDateAndSalle">
+    <Parameter Name="date" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="nomSalle" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="GetAllReservationByDateAndSalleResult">
+      <Column Name="ID_Reservation" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NomR" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Detail" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Utilisateur" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Salle" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HeureFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinDebut" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MinFin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Utilisateur1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pseudo" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Activite" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Web" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID_Salle1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nom1" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Capacite" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Surface" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Detail1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

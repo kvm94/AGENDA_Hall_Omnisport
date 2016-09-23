@@ -1,0 +1,20 @@
+﻿<Window x:Class="Agenda___Hall_Omnisports.Connection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Agenda___Hall_Omnisports"
+        mc:Ignorable="d"
+        Title="Connexion" Height="184" Width="327" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="White">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="300" Height="135">
+            <Label Content="Pseudo :" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="Mot de passe :" Canvas.Left="10" Canvas.Top="45"/>
+            <TextBox x:Name="pseudoTextBox" Text="" Canvas.Left="111" TextWrapping="NoWrap" Canvas.Top="9" Width="174" TextChanged="pseudoTextBox_TextChanged" MaxLength="20"/>
+            <PasswordBox x:Name="passwordPasswordBox" Canvas.Left="111" Canvas.Top="46" Width="174" PasswordChanged="passwordPasswordBox_PasswordChanged" MaxLength="20"/>
+            <Button x:Name="connectionButton" Content="Connexion" Canvas.Left="190" Canvas.Top="85" Width="95" IsEnabled="False" Click="connectionButton_Click"/>
+            <Button x:Name="inscriptionButton" Content="Inscription" Canvas.Left="90" Canvas.Top="85" Width="90" Click="inscriptionBT_Click"/>
+            <Button x:Name="retourButton" Content="Retour" Canvas.Left="15" Canvas.Top="85" Width="65" Click="retourButton_Click"/>
+        </Canvas>
+    </Grid>
+</Window>

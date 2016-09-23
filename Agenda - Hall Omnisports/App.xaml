@@ -1,0 +1,17 @@
+﻿<Application x:Class="Agenda___Hall_Omnisports.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Agenda___Hall_Omnisports"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/Metro/Metro.MSControls.Core.Implicit.xaml" />
+                <ResourceDictionary Source="Themes/Metro/Metro.MSControls.Toolkit.Implicit.xaml" />
+                <ResourceDictionary Source="Themes/Metro/Styles.Shared.xaml" />
+                <ResourceDictionary Source="Themes/Metro/Styles.WPF.xaml" />
+                <ResourceDictionary Source="Themes/Metro/Theme.Colors.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
